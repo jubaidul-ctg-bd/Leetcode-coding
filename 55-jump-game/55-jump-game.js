@@ -14,7 +14,6 @@ var canJump = function(nums) {
       }
       else if(point>=0) {
           cnt++
-          console.log(cnt, nums[i])
           if(cnt<nums[i]) {
               ans=true
               point=-1
