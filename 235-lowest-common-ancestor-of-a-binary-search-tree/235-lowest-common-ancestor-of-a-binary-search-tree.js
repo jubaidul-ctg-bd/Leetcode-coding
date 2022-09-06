@@ -14,7 +14,6 @@
  */
 let ans
 var LCA = (root, p, q, x, y) => {
-    if(!root) return null
     if(root.val<p.val && root.val<q.val) return LCA(root.right, p, q)
     if(root.val>p.val && root.val>q.val) return LCA(root.left, p, q)
     return root
