@@ -11,6 +11,5 @@ var lengthOfLongestSubstring = function(s) {
         obj[s[i]]=i+1
         ans=Math.max(1+i-left, ans)
     }
-    ans=Math.max(s.length-left, ans)
     return ans
 };
