@@ -14,9 +14,7 @@ var threeSum = function(nums) {
         while(start!=end && start<len) {
             sum=nums[i]+nums[start]+nums[end] 
             if(sum==0) {
-                let tmp = [nums[i], nums[start], nums[end]]
-                tmp.sort()
-                let str=`${tmp[0]},${tmp[1]},${tmp[2]}`
+                let str=`${nums[i]},${nums[start]},${nums[end]}`
                 if(!number.has(str)) {
                     number.add(str)
                     ans.push([nums[i], nums[start], nums[end]])
