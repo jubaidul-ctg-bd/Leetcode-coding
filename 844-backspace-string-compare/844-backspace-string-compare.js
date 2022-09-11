@@ -24,7 +24,6 @@ var backspaceCompare = function(s, t) {
         }
         else cnt++
     } 
-    console.log(a, b)
     if(a==b) return true
     else return false
 };
