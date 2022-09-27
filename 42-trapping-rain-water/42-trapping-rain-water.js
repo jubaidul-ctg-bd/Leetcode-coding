@@ -13,10 +13,10 @@ var trap = function(height) {
         lm = Math.max(height[i], lm)
         left.push(lm)    
         rm = Math.max(height[n-i-1], rm)
-        right.unshift(rm)    
+        right.push(rm)    
     }
     for(let i=0; i<n; i++) {
-        ans += Math.min(left[i], right[i])-height[i]
+        ans += Math.min(left[i], right[n-i-1])-height[i]
     }
     return ans
 };
